@@ -1,2 +1,15 @@
 # Pothole_Detection_AI_YOLO
-This AI is meant to detect potholes within roads.  It is trained via YOLO, with a proprietary dataset. 
+
+
+A trained computer vision model for automatic pothole detection in road images.
+This CV model has been trained to specifically only detect potholes.
+
+This can be used in:
+
+Road maintenance monitoring
+
+Infrastructure inspection
+
+Automated road quality analysis
+
+
