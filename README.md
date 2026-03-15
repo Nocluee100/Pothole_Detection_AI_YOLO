@@ -1,15 +1,50 @@
-# Pothole_Detection_AI_YOLO
+# Pothole Detection AI
 
+![Pothole Detection Banner](Assets/banner.jpeg)
 
-A trained computer vision model for automatic pothole detection in road images.
+Welcome!!
+
+This is a computer vision model trained to detect potholes on roads.
 This CV model has been trained to specifically only detect potholes.
 
-This can be used in:
+## How to use this AI?
 
-Road maintenance monitoring
+Firstly, to use this AI, you must clone it.
+This can be easily done by clicking on the green "Code" button on the top, and then clicking the "Download Zip" button.
 
-Infrastructure inspection
+Or, you can run the following command in Bash:
 
-Automated road quality analysis
+```
+git clone https://github.com/Nocluee100/Pothole_Detection_AI_YOLO
+```
 
+
+
+Then, when you unzip the file, head to the [weights](weights/) folder.
+Then, you can either use [best.pt](weights/best.pt) or [last.pt](weights/last.pt). I would recommend using best.pt.
+
+Then, you can use python script, such as the one given below, to run the CV model.
+
+```
+from ultralytics import YOLO
+
+model = YOLO("weights/best.pt")
+results = model("image.jpg")
+results[0].show()  # Access the first result, then call .show()
+```
+
+## Imports
+
+You will need to import ultralytics as this model is trained on YOLO.
+
+You can import it by running this command in Bash:
+
+```
+pip install ultralytics
+```
+
+
+## License
+
+The License for this AI is an MIT license. You can find it here: [License](LICENSE)
 
