@@ -30,7 +30,7 @@ from ultralytics import YOLO
 
 model = YOLO("weights/best.pt")
 results = model("image.jpg")
-results[0].show()  # Access the first result, then call .show()
+results[0].show() 
 ```
 
 ## Imports
